@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              laranja: {
+                primary: "#F97316",
+              }
+            },
+            fontFamily: {
+              vast: ["Vast Shadow", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <div class="bg-gradient-to-r from-black to-orange-500 items-center w-4/5 p-10 m-auto my-10">
-      <p class="text-5xl font-black text-end">Josué Lustosa</p>
+    <div
+      class="bg-gradient-to-r from-black to-laranja-primary items-center w-4/5 p-10 m-auto my-10"
+    >
+      <p class="text-5xl font-black font-vast text-end">Josué Lustosa</p>
       <p class="text-xl text-end">Frontend Developer</p>
     </div>
   </body>
