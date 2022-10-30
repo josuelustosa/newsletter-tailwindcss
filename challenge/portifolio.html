@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
       tailwind.config = {
         theme: {
@@ -14,7 +14,7 @@
             colors: {
               laranja: {
                 primary: "#F97316",
-              }
+              },
             },
             fontFamily: {
               vast: ["Vast Shadow", "cursive"],
@@ -25,11 +25,18 @@
     </script>
   </head>
   <body>
-    <div
-      class="bg-gradient-to-r from-black to-laranja-primary items-center w-4/5 p-10 m-auto my-10"
-    >
-      <p class="text-5xl font-black font-vast text-end">Josué Lustosa</p>
-      <p class="text-xl text-end">Frontend Developer</p>
+    <div class="flex justify-center">
+      <img
+        class="h-44"
+        src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380"
+        alt="json code"
+      />
+      <div
+        class="p-10 flex flex-col w-3/5 bg-gradient-to-r from-black to-laranja-primary justify-center h-44 gap-3"
+      >
+        <p class="text-5xl font-black font-vast text-end">Josué Lustosa</p>
+        <p class="text-xl text-end">Frontend Developer</p>
+      </div>
     </div>
   </body>
 </html>
