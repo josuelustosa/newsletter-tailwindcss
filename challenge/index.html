@@ -9,15 +9,18 @@
     />
 
     <!-- Meta tags - SEO -->
-    <meta name="keywords" content="HTML, CSS, Tailwindcss">
-    <meta name="description" content="Simple portfolio developed in Tailwindcss course">
-    <meta name="author" content="Josué Lustosa">
-    
+    <meta name="keywords" content="HTML, CSS, Tailwindcss" />
+    <meta
+      name="description"
+      content="Simple portfolio developed in Tailwindcss course"
+    />
+    <meta name="author" content="Josué Lustosa" />
+
     <!-- Meta tags - padrão -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Portfólio | Josué Lustosa</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -27,7 +30,8 @@
           extend: {
             colors: {
               laranja: {
-                primary: "#F97316",
+                primary: "#fe5626",
+                light: "#f3f4f6",
               },
             },
             fontFamily: {
@@ -39,17 +43,47 @@
     </script>
   </head>
   <body>
-    <div class="flex justify-center">
+    <div class="flex justify-center drop-shadow-2xl mt-2">
       <img
         class="h-44"
         src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380"
         alt="json code"
       />
       <div
-        class="p-10 flex flex-col w-3/5 bg-gradient-to-r from-black to-laranja-primary justify-center h-44 gap-3"
+        class="p-10 flex flex-col w-3/5 bg-gradient-to-r from-black to-laranja-primary justify-center h-44 gap-3 rounded-r-lg"
       >
         <p class="text-5xl font-black font-vast text-end">Josué Lustosa</p>
         <p class="text-xl text-end">Frontend Developer</p>
+        <ul class="flex justify-end gap-4">
+          <li>
+            <a
+              class="hover:font-bold hover:text-laranja-light duration-200"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:font-bold hover:text-laranja-light duration-200"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:font-bold hover:text-laranja-light duration-200"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Enviar um e-mail</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </body>
