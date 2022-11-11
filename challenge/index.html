@@ -39,6 +39,19 @@
             fontFamily: {
               vast: ["Vast Shadow", "cursive"],
             },
+            keyframes: {
+              sino_kf: {
+                "0%, 100%": {
+                  transform: "rotate(-10deg)",
+                },
+                "50%": {
+                  transform: "rotate(10deg)",
+                },
+              },
+            },
+            animation: {
+              sino: "sino_kf 0.31s ease-in-out infinite",
+            },
           },
         },
       };
@@ -52,12 +65,12 @@
         alt="Perfil Josué Lustosa"
       />
       <div
-        class="p-10 flex flex-col w-3/5 bg-gradient-to-r from-black to-laranja-primary justify-center h-48 gap-3 rounded-r-lg"
+        class="p-10 flex flex-col w-3/5 bg-gradient-to-r from-orange-800 to-orange-500 justify-center h-48 gap-3 rounded-r-lg"
       >
         <p class="text-5xl font-black font-vast text-end">Josué Lustosa</p>
         <p class="text-2xl font-semibold italic text-end">Frontend Developer</p>
-        <ul class="flex justify-end gap-4">
-          <li>
+        <ul class="flex justify-end gap-4 group">
+          <li class="group-hover:animate-sino">
             <a
               class="hover:font-bold hover:text-branco-primary hover:decoration-2 underline duration-200"
               href="https://www.linkedin.com/in/josue-lustosa/"
@@ -66,7 +79,7 @@
               >Linkedin</a
             >
           </li>
-          <li>
+          <li class="group-hover:animate-sino">
             <a
               class="hover:font-bold hover:text-branco-primary hover:decoration-2 underline duration-200"
               href="https://github.com/josuelustosa"
@@ -75,7 +88,7 @@
               >Github</a
             >
           </li>
-          <li>
+          <li class="group-hover:animate-sino">
             <a
               class="hover:font-bold hover:text-branco-primary hover:decoration-2 underline duration-200"
               href="mailto:josuelustosa.job@gmail.com?subject=Ol%C3%A1,%20Josu%C3%A9%20Lustosa"
