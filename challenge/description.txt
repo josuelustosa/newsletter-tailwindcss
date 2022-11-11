@@ -1,9 +1,0 @@
-DESAFIO
-
-Gabriela, uma estudante de Desenvolvimento Front-end decidiu aprofundar sua experiência e conhecimentos que têm adquirido com os estudos de Tailwind, praticando em um projeto pessoal de portfólio. Até o momento, Gabriela criou o seguinte layout:
-
-alt text (IMAGEM): retângulo com gradiente de cor de fundo rosa e cinza com dois textos, um abaixo do outro. O texto da primeira linha está escrito Gabriela e o texto que está abaixo está escrito Desenvolvedora Front-end
-
-Para praticarmos o que foi visto nesta aula, vamos recriar a imagem acima utilizando as classes utilitárias do Tailwind.
-
-O layout é composto por um elemento div que aloca 2 parágrafos. A div contém um gradiente de cor de fundo com as cores pink-300 e slate-400, uma determinada largura e os textos estão dispostos em coluna, com características de tamanho e peso.
