@@ -23,6 +23,30 @@
 
     <title>Página Inicial</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            width: {
+              dimensions: {
+                // old devices
+                ms: "20rem", // Mobile S: 320px
+                mm: "23.438rem", // Mobile M: 375px
+                ml: "26.563", // Mobile L: 375px
+
+                // defaults devices
+                sm: "40rem", // 640px
+                md: "48rem", // 768px
+                lg: "64rem", // 1024px
+                xl: "80rem", // 1280px
+                "2xl": "6rem", // 1536px
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <main
@@ -39,12 +63,14 @@
           </p>
         </header>
 
-        <section class="flex justify-center items-center gap-4 mt-8">
+        <section
+          class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8 m-auto"
+        >
           <div
-            class="p-4 max-w-72 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            class="p-4 container lg:w-9/12 md:w-9/12 lg:h-96 bg-white md:h-96 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
             <img
-              class="w-72 h-32 rounded-lg"
+              class="lg:w-full md:w-full lg:h-32 md:h-32 lg:max-h-32 md:max-h-32 rounded-lg"
               src="assets/images/print-alura-tailwindcss.png"
               alt="Captura de Tela Olá Tailwind CSS"
             />
@@ -53,36 +79,39 @@
             >
               Hello World
             </h5>
-            <p class="mb-4 w-72 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
               Aplicação com funcionalidades iniciais, como resposividade, do
               Tailwind CSS.
             </p>
-            <a
-              href="hello-world/index.html"
-              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Acessar
-              <svg
-                aria-hidden="true"
-                class="ml-2 mr-1 w-4 h-4"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+
+            <div class="">
+              <a
+                href="hello-world/index.html"
+                class="inline-flex items-center top-4 py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
+                Acessar
+                <svg
+                  aria-hidden="true"
+                  class="ml-2 mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div
-            class="p-4 max-w-72 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            class="p-4 container lg:w-9/12 md:w-9/12 lg:h-96 bg-white md:h-96 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
             <img
-              class="w-72 h-32 rounded-lg"
+              class="lg:w-full md:w-full lg:h-32 md:h-32 lg:max-h-32 md:max-h-32 rounded-lg"
               src="assets/images/print-challenge.png"
               alt="Captura de Tela do Desafio"
             />
@@ -91,7 +120,7 @@
             >
               Challenge
             </h5>
-            <p class="mb-4 w-72 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
               Simples Cartão de Contatos desenvolvido com Tailwind CSS.
             </p>
             <a
@@ -116,10 +145,10 @@
           </div>
 
           <div
-            class="p-4 max-w-72 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            class="p-4 container lg:w-9/12 md:w-9/12 lg:h-96 bg-white md:h-4/5 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
             <img
-              class="w-72 h-32 rounded-lg"
+              class="lg:w-full md:w-full lg:h-32 md:h-32 lg:max-h-32 md:max-h-32 rounded-lg"
               src="assets/images/print-alura-newsletter.png"
               alt="Captura de Tela da Newsletter"
             />
@@ -128,12 +157,12 @@
             >
               Alura Newsletter
             </h5>
-            <p class="mb-4 w-72 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
               Página de captura de e-mail utilizando Tailwind CSS.
             </p>
             <a
               href="newsletter/index.html"
-              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="inline-flex items-center items-end py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Acessar
               <svg
